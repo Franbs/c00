@@ -2,43 +2,31 @@
 
 void	ft_print_comb2(void)
 {
-	char num1 = '0';
-	char num2;
-	char num3;
-	char num4;
+	char	a[5];
+	int		i;
+	int		j;
 
-	while (num1 <= '9')
+	i = 0;
+	while (i < 100)
 	{
-		num2 = '0';
-		while (num2 <= '9')
+		j = i + 1;
+		while (j < 100)
 		{
-			num3 = num1;
-			num4 = num2 + 1;
-			while (num3 <= '9')
+			a[0] = (i / 10) + '0';
+			a[1] = (i % 10) + '0';
+			a[2] = ' ';
+			a[3] = (j / 10) + '0';
+			a[4] = (j % 10) + '0';
+			write(1, a, 5);
+			if (!(i == 98 && j == 99))
 			{
-				while (num4 <= '9')
-				{
-					write(1, &num1, 1);
-					write(1, &num2, 1);
-					write(1, " ", 1);
-					write(1, &num3, 1);
-					write(1, &num4, 1);
-					if (num1 != '9' || num2 != '8' || 
-							num3 != '9' || num4 != '9')
-						write(1, ", ", 2);
-
-					num4++;
-				}
-				num3++;
-				num4 = '0';
+				write(1, ", ", 2);
 			}
-			num2++;
+			j++;
 		}
-		num1++;
+		i++;
 	}
-	write(1, "\n", 1);
 }
-
 /*int main(void)
 {
 	ft_print_comb2();
