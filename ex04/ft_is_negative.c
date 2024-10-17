@@ -1,47 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_comb2.c                                   :+:      :+:    :+:   */
+/*   ft_is_negative.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: fbanzo-s <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/17 17:29:17 by fbanzo-s          #+#    #+#             */
-/*   Updated: 2024/10/17 17:29:20 by fbanzo-s         ###   ########.fr       */
+/*   Created: 2024/10/17 17:44:55 by fbanzo-s          #+#    #+#             */
+/*   Updated: 2024/10/17 17:48:13 by fbanzo-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 #include <unistd.h>
 
-void	ft_print_comb2(void)
+void	ft_is_negative(int n)
 {
-	char	a[5];
-	int		i;
-	int		j;
-
-	i = 0;
-	while (i < 100)
+	if (n <= -1)
 	{
-		j = i + 1;
-		while (j < 100)
-		{
-			a[0] = (i / 10) + '0';
-			a[1] = (i % 10) + '0';
-			a[2] = ' ';
-			a[3] = (j / 10) + '0';
-			a[4] = (j % 10) + '0';
-			write(1, a, 5);
-			if (!(i == 98 && j == 99))
-			{
-				write(1, ", ", 2);
-			}
-			j++;
-		}
-		i++;
+		write(1, "N", 1);
+	}
+	else
+	{
+		write(1, "P", 1);
 	}
 }
-/*int main(void)
-{
-	ft_print_comb2();
-	write(1, " ", 1);
+/*int main() {
+	int n = 3;
+	ft_is_negative(n);
+	write(1, "\n", 1);
 	return 0;
 }*/

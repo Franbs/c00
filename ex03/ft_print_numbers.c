@@ -1,47 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_comb2.c                                   :+:      :+:    :+:   */
+/*   ft_print_numbers.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: fbanzo-s <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/17 17:29:17 by fbanzo-s          #+#    #+#             */
-/*   Updated: 2024/10/17 17:29:20 by fbanzo-s         ###   ########.fr       */
+/*   Created: 2024/10/17 17:40:46 by fbanzo-s          #+#    #+#             */
+/*   Updated: 2024/10/17 17:44:01 by fbanzo-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 #include <unistd.h>
 
-void	ft_print_comb2(void)
+void	ft_print_numbers(void)
 {
-	char	a[5];
-	int		i;
-	int		j;
+	char	i;
 
-	i = 0;
-	while (i < 100)
+	i = '0';
+	while (i <= '9')
 	{
-		j = i + 1;
-		while (j < 100)
-		{
-			a[0] = (i / 10) + '0';
-			a[1] = (i % 10) + '0';
-			a[2] = ' ';
-			a[3] = (j / 10) + '0';
-			a[4] = (j % 10) + '0';
-			write(1, a, 5);
-			if (!(i == 98 && j == 99))
-			{
-				write(1, ", ", 2);
-			}
-			j++;
-		}
+		write(1, &i, 1);
 		i++;
 	}
 }
-/*int main(void)
-{
-	ft_print_comb2();
-	write(1, " ", 1);
+/*int main() {
+	ft_print_numbers();
+	write(1, "\n", 1);
 	return 0;
 }*/
