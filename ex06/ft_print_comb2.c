@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_print_comb2.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fbanzo-s <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: fbanzo-s <fbanzo-s@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/17 17:29:17 by fbanzo-s          #+#    #+#             */
-/*   Updated: 2024/10/17 17:29:20 by fbanzo-s         ###   ########.fr       */
+/*   Created: 2024/10/19 19:38:36 by fbanzo-s          #+#    #+#             */
+/*   Updated: 2024/10/19 19:51:29 by fbanzo-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_print_comb2(void)
 {
-	char	a[5];
+	char	nums[5];
 	int		i;
 	int		j;
 
@@ -24,12 +24,12 @@ void	ft_print_comb2(void)
 		j = i + 1;
 		while (j < 100)
 		{
-			a[0] = (i / 10) + '0';
-			a[1] = (i % 10) + '0';
-			a[2] = ' ';
-			a[3] = (j / 10) + '0';
-			a[4] = (j % 10) + '0';
-			write(1, a, 5);
+			nums[0] = (i / 10) + '0';
+			nums[1] = (i % 10) + '0';
+			nums[2] = ' ';
+			nums[3] = (j / 10) + '0';
+			nums[4] = (j % 10) + '0';
+			write(1, nums, 5);
 			if (!(i == 98 && j == 99))
 			{
 				write(1, ", ", 2);
@@ -38,10 +38,10 @@ void	ft_print_comb2(void)
 		}
 		i++;
 	}
+	write(1, "\n", 1);
 }
-/*int main(void)
+/*int	main(void)
 {
 	ft_print_comb2();
-	write(1, " ", 1);
-	return 0;
+	return (0);
 }*/

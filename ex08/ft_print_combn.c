@@ -1,31 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_is_negative.c                                   :+:      :+:    :+:   */
+/*   ft_print_combn.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: fbanzo-s <fbanzo-s@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/19 19:36:47 by fbanzo-s          #+#    #+#             */
-/*   Updated: 2024/10/19 19:36:51 by fbanzo-s         ###   ########.fr       */
+/*   Created: 2024/10/19 19:41:44 by fbanzo-s          #+#    #+#             */
+/*   Updated: 2024/10/19 20:02:22 by fbanzo-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void	ft_is_negative(int n)
+void	ft_print_combn(int n)
 {
-	if (n <= -1)
+	char	nums[];
+	char	cnum = n + '0';
+	char	i = '0';
+
+	while (i < n)
 	{
-		write(1, "N", 1);
-	}
-	else
-	{
-		write(1, "P", 1);
+		write();
+		i++;
 	}
 }
-/*int main() {
-	int n = 3;
-	ft_is_negative(n);
-	write(1, "\n", 1);
+
+int	main(void)
+{
+	ft_print_combn(2);
 	return 0;
-}*/
+}

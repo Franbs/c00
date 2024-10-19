@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnbr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fbanzo-s <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: fbanzo-s <fbanzo-s@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/17 18:35:23 by fbanzo-s          #+#    #+#             */
-/*   Updated: 2024/10/17 19:47:46 by fbanzo-s         ###   ########.fr       */
+/*   Created: 2024/10/19 19:39:25 by fbanzo-s          #+#    #+#             */
+/*   Updated: 2024/10/19 19:39:28 by fbanzo-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include <unistd.h>
 
 int	length(int num)

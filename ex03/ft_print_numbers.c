@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_print_numbers.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fbanzo-s <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: fbanzo-s <fbanzo-s@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/17 17:40:46 by fbanzo-s          #+#    #+#             */
-/*   Updated: 2024/10/17 17:44:01 by fbanzo-s         ###   ########.fr       */
+/*   Created: 2024/10/19 19:35:59 by fbanzo-s          #+#    #+#             */
+/*   Updated: 2024/10/19 19:36:03 by fbanzo-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include <unistd.h>
 
 void	ft_print_numbers(void)
